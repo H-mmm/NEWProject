@@ -14,6 +14,10 @@
 		ADD2BEDC1E7CD8F900A6769E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADD2BEDB1E7CD8F900A6769E /* Assets.xcassets */; };
 		ADD2BEDF1E7CD8F900A6769E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADD2BEDD1E7CD8F900A6769E /* LaunchScreen.storyboard */; };
 		ADD2BF0B1E7CFD2800A6769E /* ViewController_1.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD2BF0A1E7CFD2800A6769E /* ViewController_1.m */; };
+		ADD2BF0F1E7D28FA00A6769E /* bofang3.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD2BF0C1E7D28FA00A6769E /* bofang3.png */; };
+		ADD2BF101E7D28FA00A6769E /* bofang2.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD2BF0D1E7D28FA00A6769E /* bofang2.png */; };
+		ADD2BF111E7D28FA00A6769E /* bofang1.png in Resources */ = {isa = PBXBuildFile; fileRef = ADD2BF0E1E7D28FA00A6769E /* bofang1.png */; };
+		ADD2BF141E7D360100A6769E /* mTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD2BF131E7D360100A6769E /* mTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,11 @@
 		ADD2BEE01E7CD8F900A6769E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADD2BF091E7CFD2800A6769E /* ViewController_1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController_1.h; sourceTree = "<group>"; };
 		ADD2BF0A1E7CFD2800A6769E /* ViewController_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController_1.m; sourceTree = "<group>"; };
+		ADD2BF0C1E7D28FA00A6769E /* bofang3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofang3.png; sourceTree = "<group>"; };
+		ADD2BF0D1E7D28FA00A6769E /* bofang2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofang2.png; sourceTree = "<group>"; };
+		ADD2BF0E1E7D28FA00A6769E /* bofang1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bofang1.png; sourceTree = "<group>"; };
+		ADD2BF121E7D360100A6769E /* mTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mTableViewCell.h; sourceTree = "<group>"; };
+		ADD2BF131E7D360100A6769E /* mTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +70,9 @@
 		ADD2BECE1E7CD8F900A6769E /* NEWProject */ = {
 			isa = PBXGroup;
 			children = (
+				ADD2BF0C1E7D28FA00A6769E /* bofang3.png */,
+				ADD2BF0D1E7D28FA00A6769E /* bofang2.png */,
+				ADD2BF0E1E7D28FA00A6769E /* bofang1.png */,
 				ADD2BED21E7CD8F900A6769E /* AppDelegate.h */,
 				ADD2BED31E7CD8F900A6769E /* AppDelegate.m */,
 				ADD2BED51E7CD8F900A6769E /* ViewController.h */,
@@ -80,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				ADD2BED01E7CD8F900A6769E /* main.m */,
+				ADD2BF121E7D360100A6769E /* mTableViewCell.h */,
+				ADD2BF131E7D360100A6769E /* mTableViewCell.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -142,9 +156,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADD2BF111E7D28FA00A6769E /* bofang1.png in Resources */,
 				ADD2BEDF1E7CD8F900A6769E /* LaunchScreen.storyboard in Resources */,
 				ADD2BEDC1E7CD8F900A6769E /* Assets.xcassets in Resources */,
+				ADD2BF0F1E7D28FA00A6769E /* bofang3.png in Resources */,
 				ADD2BEDA1E7CD8F900A6769E /* Main.storyboard in Resources */,
+				ADD2BF101E7D28FA00A6769E /* bofang2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +175,7 @@
 				ADD2BF0B1E7CFD2800A6769E /* ViewController_1.m in Sources */,
 				ADD2BED71E7CD8F900A6769E /* ViewController.m in Sources */,
 				ADD2BED41E7CD8F900A6769E /* AppDelegate.m in Sources */,
+				ADD2BF141E7D360100A6769E /* mTableViewCell.m in Sources */,
 				ADD2BED11E7CD8F900A6769E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
