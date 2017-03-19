@@ -58,25 +58,42 @@
 
 - (void)initView{
     if (_cellHeight !=  0.0) {
+        UILabel *seconds = [[UILabel alloc]initWithFrame:CGRectMake(_cellHeight+40+ 10*_i, 10, 30, _cellHeight-20)];
+        seconds.text = _str;
+        seconds.textAlignment = NSTextAlignmentCenter;
         UIImageView *headImageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"user"]];
         headImageView.frame = CGRectMake(10, 10, _cellHeight - 20, _cellHeight - 20 );
         UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(_cellHeight+5,10,10*_i+30,_cellHeight - 20)];
         [btn addTarget:self action:@selector(bofangdonghua) forControlEvents:UIControlEventTouchDown];
         [btn.layer setCornerRadius:7.0];
         [btn setBackgroundColor:[UIColor orangeColor]];
+        if (_i % 2 == 0) {
+            //偶数
+        } else {
+            //奇数
+            btn.backgroundColor = [UIColor greenColor];
+            headImageView.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
+            [headImageView setImage:[UIImage imageNamed:@"user2"]];
+            headImageView.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
+            seconds.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
+        }
         _arrowView = [self arrowView:btn];
         _animationview = [self animationview:btn];
-        UILabel *seconds = [[UILabel alloc]initWithFrame:CGRectMake(_cellHeight+40+ 10*_i, 10, 100, _cellHeight-20)];
-        seconds.text = _str;
-        seconds.textAlignment = NSTextAlignmentCenter;
+        
         [btn addSubview:_arrowView];
         [btn addSubview:_animationview];
-        btn.userInteractionEnabled = YES;
+        
+        
+        
         [self.contentView addSubview:headImageView];
         [self.contentView addSubview:btn];
         [self.contentView addSubview:seconds];
-//        self.contentView.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
-        
+        if (_i % 2 == 0) {
+            //偶数
+        } else {
+            //奇数
+            self.contentView.transform = CGAffineTransformMakeRotation(180 *M_PI / 180.0);
+        }
         self.selectionStyle = UITableViewCellSelectionStyleNone;
     } else {
         NSLog(@"为什么会等于0");

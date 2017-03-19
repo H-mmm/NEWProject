@@ -84,7 +84,7 @@
     if (cell == nil) {
         cell = [[mTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
         cell.i = indexPath.row;
-        cell.str = _dataSource[indexPath.row];
+        cell.str = [NSString stringWithFormat:@"%lds",(long)indexPath.row];
         cell.cellHeight = CELLHEIGHT;
     } else {
         
